@@ -1,6 +1,8 @@
 <?php 
 
-class Ape{
-    
+class Ape extends Animal{
+    public function yel(){
+        return "Auauau";
+    }
 }
 ?>

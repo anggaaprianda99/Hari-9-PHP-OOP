@@ -1,6 +1,9 @@
 <?php
 
-class Frog {
+class Frog extends Animal{
+    public function jump(){
+        return "Hop hop";
+    }
 }
 
 ?>
