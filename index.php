@@ -3,14 +3,15 @@ require 'animal.php';
 require 'ape.php';
 require 'frog.php';
 
-$sheep = new Animal();
-echo $sheep->getName("Sheep");
+$sheep = new Animal("shaun");
+echo $sheep->getName();
 echo "<br>" .$sheep->legs;
 echo $sheep->cold_blooded;
+echo "<br>";
 
-
-$frog = new Frog();
-echo "<br>". $frog->jump();
-$ape = new Ape();
+$ape = new Ape("Auaaaa");
 echo "<br>". $ape->yel();
+$frog = new Frog("Hop hop");
+echo "<br>". $frog->jump();
+
 ?>

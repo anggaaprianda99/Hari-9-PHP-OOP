@@ -4,8 +4,11 @@ class Animal {
     public $legs = 2;
     public $cold_blooded = false;
 
-    function getName(){
+    public function __construct($name){
         $this->name = $name;
+    }
+    function getName(){
+        echo $this->name;
     }
 }
 

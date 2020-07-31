@@ -1,8 +1,12 @@
 <?php 
 
 class Ape extends Animal{
-    public function yel(){
-        return "Auauau";
+    public function __construct($yel){
+        $this->yel = $yel;
+    }
+
+    function yel(){
+        echo $this->yel;
     }
 }
 ?>
